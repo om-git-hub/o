@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="om">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ENGLISH <=> OROMO</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<header>
+  <div class="header-top">
+    <!-- Hamburger -->
+    <div class="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <!-- Title + Language buttons -->
+    <h1>
+      ENGLISH <=> OROMO
+      <span class="lang-buttons">
+        <button id="btnOromo" class="lang-btn active">OROMO</button>
+        <button id="btnEnglish" class="lang-btn">ENGLISH</button>
+      </span>
+    </h1>
+  </div>
+
+  <!-- Sidebar menu -->
+  <nav class="nav-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Search -->
+  <div class="search-container">
+    <input id="search" placeholder="Search word..." autocomplete="off">
+    <button id="searchBtn">Search</button>
+  </div>
+</header>
+
+<main>
+  <ul id="list"></ul>
+  <div id="card"></div>
+  <div class="random-box">
+    <button id="randomBtn">🎲 Random Word</button>
+  </div>
+</main>
+</body>
+</html>

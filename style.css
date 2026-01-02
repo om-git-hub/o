@@ -1,0 +1,239 @@
+/* ===== Base ===== */
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  margin: 0;
+  background: #fdf6f0;
+  color: #333;
+}
+
+/* ===== Header ===== */
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  position: relative;
+  padding: 10px 20px;
+  background: #6b4f4f;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  width: 30px;
+  height: 25px;
+  justify-content: space-between;
+  z-index: 101;
+}
+
+.hamburger div {
+  height: 4px;
+  background: #fff;
+  border-radius: 2px;
+}
+
+/* H1 title */
+h1 {
+  font-size: 28px;
+  color: #fff;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Language buttons */
+.lang-buttons {
+  display: inline-flex;
+  gap: 10px;
+}
+
+.lang-btn {
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  background: #f7d9d9;
+  color: #6b4f4f;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.lang-btn:hover {
+  opacity: 0.85;
+}
+
+/* Active / selected highlight */
+.lang-btn.active {
+  background: #fff;
+  color: #6b4f4f;
+  font-weight: 700;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+/* Sidebar Menu */
+.nav-menu {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #6b4f4f;
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  transition: left 0.3s ease;
+  z-index: 100;
+}
+
+.nav-menu a {
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 20px;
+  font-weight: 600;
+}
+
+.nav-menu.show {
+  left: 0;
+}
+
+/* Search Container */
+.search-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.search-container input {
+  padding: 12px 14px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  width: 260px;
+  outline: none;
+}
+
+.search-container input:focus {
+  box-shadow: 0 0 6px rgba(255,255,255,0.6);
+}
+
+.search-container button {
+  padding: 12px 18px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #f7d9d9;
+  color: #6b4f4f;
+  font-weight: 600;
+}
+
+.search-container button:hover {
+  background: #fff;
+}
+
+/* Word List */
+#list {
+  max-width: 400px;
+  margin: 20px auto;
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #fff;
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+li:hover {
+  background: #f7d9d9;
+}
+
+/* Card */
+#card {
+  max-width: 700px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,.15);
+}
+
+/* Card content styles */
+.card-content h1 {
+  font-size: 32px; /* display size */
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.card-content h2 {
+  color: red;
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.card-content h3 {
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.card-content .paragraph-style {
+  margin: 10px 0;
+}
+
+.card-content .list-item {
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+
+/* Random button */
+.random-box {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0;
+}
+
+.random-box button {
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  background: #6b4f4f;
+  color: #fff;
+  cursor: pointer;
+}
+
+.random-box button:hover {
+  background: #845959;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header-top {
+    justify-content: space-between;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  h1 {
+    font-size: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .lang-buttons {
+    margin-top: 5px;
+  }
+}
